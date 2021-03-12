@@ -1026,7 +1026,7 @@ Transfer_action(ia_t ia, unsigned argc, const char **argv)
     ft_gui_awaiting();
 
     /* Set a timeout for failed command start. */
-    ft_start_id = AddTimeOut(10 * 1000, ft_didnt_start);
+    ft_start_id = AddTimeOut(300 * 1000, ft_didnt_start);
 
     /* Success. */
     return true;
